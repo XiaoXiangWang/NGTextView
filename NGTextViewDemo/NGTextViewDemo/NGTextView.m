@@ -86,6 +86,7 @@
 
 -(void)layoutSubviews
 {
+    [super layoutSubviews];
     CGFloat width = CGRectGetWidth(self.bounds)-self.placeHolderInset.left-self.placeHolderInset.right;
     CGFloat height = CGRectGetHeight(self.bounds)-self.placeHolderInset.top-self.placeHolderInset.bottom;
     CGSize size = [self.xPlaceHolderLabel sizeThatFits:CGSizeMake(width, height)];
